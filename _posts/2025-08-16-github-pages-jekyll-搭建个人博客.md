@@ -2,6 +2,8 @@
 layout: post
 title: Github pages + jekyll 搭建个人博客
 date: 2025-08-16 23:38 +0800
+tags: [零散]
+description: github仓库创建/本地开发环境/其他配置/个性化配置
 ---
 
 ## 01/ Github创建仓库
@@ -47,7 +49,7 @@ git remote add origin https://github/GitHub用户名.github.io  #将本地仓库
 git push -u origin main  #本地仓库上传到GitHub仓库（可能会要求输入用户名和密码）
 ```
 
-## 03/ 部署基本配置
+## 03/ 个性化配置
 
 
 ### 基本配置
@@ -81,6 +83,44 @@ theme_mode: # [light | dark]  色调
 cdn:
 avatar: 'assets/img/000.jpg'  # 左侧栏头像图片
 ```
+
+
+
+## 04/其他配置
+
+### 创建文章
+
+- [官方教程](https://chirpy.cotes.page/posts/write-a-new-post/)
+
+- 在 `_posts` 目录下创建 YYYY-MM-DD-TITLE.md 文件（固定格式）
+
+- 可以使用插件 [Jekyll-Compose](https://github.com/jekyll/jekyll-compose) 节省创建文件的时间
+
+  ```shell
+  # draft：创建一个新的草稿帖子
+  # post：创建一个新的帖子
+  # publish：发布一个草稿
+  
+  bundle exec jekyll draft "My New Draft"
+  ```
+
+- Front Matter
+
+```yaml
+--- 
+title: TITLE 
+date: YYYY-MM-DD HH:MM:SS +/-TTTT   # 时区 +0800
+categories: [TOP_CATEGORIE, SUB_CATEGORIE]  # 支持多级分类，一个逗号一层
+tags: [TAG] # TAG names should always be lowercase 
+math: true
+---
+```
+
+- math、mermaid、pin 默认是false，需要可以添加
+- description: 文章中简要描述，会显示在首页每篇文章的标题下
+- 注意：
+  - 文章不能出现连续的两个大括号，会报错，可以在两个大括号中间加空格
+  - 文章插入图片，路径要用反斜杠/
 
 ## References
 
