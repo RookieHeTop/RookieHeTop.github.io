@@ -1,0 +1,107 @@
+<h2 id="01-github创建仓库">01/ Github创建仓库</h2>
+
+<ol>
+  <li>使用<a href="https://github.com/cotes2020/chirpy-starter">Chirpy 模板</a>创建仓库：【Use this template】——【Create a new repository】</li>
+</ol>
+
+<ul>
+  <li>新存储库必须命名为 <code class="language-plaintext highlighter-rouge">&lt;username&gt;.github.io</code>， <code class="language-plaintext highlighter-rouge">username</code> 为小写 GitHub 用户名</li>
+</ul>
+
+<ol>
+  <li>新仓库右上角设置 —— pages设置 —— 将Source修改为 Github Action</li>
+</ol>
+
+<h2 id="02-本地jekyll开发-环境">02/ 本地Jekyll开发 环境</h2>
+
+<h3 id="1-rubyjekyllbundler环境搭建">1. Ruby、Jekyll、bundler环境搭建</h3>
+
+<ul>
+  <li><a href="https://jekyllrb.com/docs/installation/windows/">官方文档</a></li>
+</ul>
+
+<ol>
+  <li>安装 <a href="https://rubyinstaller.org/downloads/">Ruby</a>
+    <ul>
+      <li>安装完成后会跳出cmd，输入3（MSYS2 and MINGW development tool chain）</li>
+    </ul>
+  </li>
+  <li>安装 Jekyll：<code class="language-plaintext highlighter-rouge">gem install jekyll bundler</code>
+    <ul>
+      <li>如果运行不了需要换国内源：<a href="https://mirrors.tuna.tsinghua.edu.cn/help/rubygems/">清华源 Ruby Gems</a></li>
+    </ul>
+  </li>
+  <li>检查 Jekyll 安装是否成功并查看版本：<code class="language-plaintext highlighter-rouge">jekyll -v</code></li>
+</ol>
+
+<h3 id="2-本地开发流程">2. 本地开发流程</h3>
+
+<ul>
+  <li>本地启动 Jekyll（本地拉取已创建的gihub仓库，在其中执行命令）
+    <ul>
+      <li>
+        <p>本地 Jekyll 环境构建后需要将 Gemfile 中的 source 换源为清华源</p>
+
+        <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  bundle <span class="nb">install</span>        <span class="c"># 构建本地环境</span>
+  bundle <span class="nb">exec </span>jekyll b  <span class="c"># 编译</span>
+  bundle <span class="nb">exec </span>jekyll s  <span class="c"># 启动</span>
+</code></pre></div>        </div>
+
+        <ul>
+          <li>Gemfile文件，指定了想要使用的gem的位置和版本</li>
+        </ul>
+      </li>
+      <li>
+        <p>本地访问：http://127.0.0.1:4000</p>
+      </li>
+    </ul>
+  </li>
+  <li>git提交
+    <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add <span class="nb">.</span>             <span class="c"># 将本地文件存到暂存区  </span>
+git commit <span class="nt">-m</span> <span class="s2">"说明"</span>   <span class="c"># 将暂存区文件提交到本地仓库  </span>
+git remote add origin https://github/GitHub用户名.github.io  <span class="c">#将本地仓库关联到GitHub仓库  </span>
+git push <span class="nt">-u</span> origin main  <span class="c">#本地仓库上传到GitHub仓库（可能会要求输入用户名和密码）</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h2 id="04-部署成功基本配置">04/ 部署成功基本配置</h2>
+
+<h3 id="基本配置">基本配置</h3>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">_config.yml</code>文件</li>
+</ul>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">lang</span><span class="pi">:</span> <span class="s">zh-CN</span>  <span class="c1"># 语言</span>
+<span class="na">timezone</span><span class="pi">:</span> <span class="s">Asia/Shanghai</span>  <span class="c1"># 时区</span>
+
+<span class="na">title</span><span class="pi">:</span> <span class="s">Xylia</span>    <span class="c1"># 主标题</span>
+<span class="na">tagline</span><span class="pi">:</span> <span class="s">Xylia's Blog</span>   <span class="c1"># 主标题介绍</span>
+
+<span class="na">url</span><span class="pi">:</span> <span class="s2">"</span><span class="s">https://xyllya.github.io/"</span>  <span class="c1"># 仓库地址</span>
+
+<span class="na">github</span><span class="pi">:</span>
+  <span class="na">username</span><span class="pi">:</span> <span class="s">Xyllya</span>  <span class="c1"># 左下角Github跳转</span>
+
+<span class="na">social</span><span class="pi">:</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">Xylia</span>   <span class="c1"># 保留权利人姓名，在网页中间最下面</span>
+  <span class="na">email</span><span class="pi">:</span> <span class="s">always1710@163.com</span>   <span class="c1"># 左下角Email跳转</span>
+  <span class="na">links</span><span class="pi">:</span>
+    <span class="c1">#  https://twitter.com/username # change to your Twitter homepage</span>
+    <span class="pi">-</span> <span class="s">https://github.com/Xyllya</span> <span class="c1"># change to your GitHub homepage</span>
+    <span class="c1"># Uncomment below to add more social links</span>
+    <span class="c1"># - https://www.facebook.com/username</span>
+    <span class="c1"># - https://www.linkedin.com/in/username</span>
+
+<span class="na">theme_mode</span><span class="pi">:</span> <span class="c1"># [light | dark]  色调</span>
+
+<span class="na">cdn</span><span class="pi">:</span>
+<span class="na">avatar</span><span class="pi">:</span> <span class="s1">'</span><span class="s">assets/img/000.jpg'</span>  <span class="c1"># 左侧栏头像图片</span>
+</code></pre></div></div>
+
+<h2 id="references">References</h2>
+
+<ul>
+  <li><a href="https://xyllya.github.io/posts/Github-Pages-+-Jekyll-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">Github-Pages-+-Jekyll-搭建个人博客</a></li>
+</ul>
