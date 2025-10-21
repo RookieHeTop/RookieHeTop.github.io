@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>MrHe</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2025-10-21T21:11:16+08:00</updated>
+  <updated>2025-10-21T21:56:10+08:00</updated>
   <author>
     <name>MrHe</name>
     <uri>http://localhost:4000/</uri>
@@ -24,7 +24,7 @@
     <link href="http://localhost:4000/posts/cpp%E5%90%84%E7%B1%BB%E5%AE%B9%E5%99%A8%E7%9A%84%E5%A2%9E%E5%88%A0%E6%9F%A5%E6%94%B9%E6%93%8D%E4%BD%9C%E6%9C%89%E5%93%AA%E4%BA%9B%E7%9B%B8%E5%90%8C%E9%83%A8%E5%88%86-%E5%90%84%E4%B8%AA%E5%AE%B9%E5%99%A8%E5%8F%88%E6%9C%89%E5%93%AA%E4%BA%9B%E4%B8%8D%E5%90%8C%E9%83%A8%E5%88%86/" rel="alternate" type="text/html" title="cpp各类容器的增删查改操作有哪些相同部分，各个容器又有哪些不同部分" />
     <published>2025-10-21T20:42:00+08:00</published>
   
-    <updated>2025-10-21T20:42:00+08:00</updated>
+    <updated>2025-10-21T21:46:02+08:00</updated>
   
     <id>http://localhost:4000/posts/cpp%E5%90%84%E7%B1%BB%E5%AE%B9%E5%99%A8%E7%9A%84%E5%A2%9E%E5%88%A0%E6%9F%A5%E6%94%B9%E6%93%8D%E4%BD%9C%E6%9C%89%E5%93%AA%E4%BA%9B%E7%9B%B8%E5%90%8C%E9%83%A8%E5%88%86-%E5%90%84%E4%B8%AA%E5%AE%B9%E5%99%A8%E5%8F%88%E6%9C%89%E5%93%AA%E4%BA%9B%E4%B8%8D%E5%90%8C%E9%83%A8%E5%88%86/</id>
     <content type="text/html" src="http://localhost:4000/posts/cpp%E5%90%84%E7%B1%BB%E5%AE%B9%E5%99%A8%E7%9A%84%E5%A2%9E%E5%88%A0%E6%9F%A5%E6%94%B9%E6%93%8D%E4%BD%9C%E6%9C%89%E5%93%AA%E4%BA%9B%E7%9B%B8%E5%90%8C%E9%83%A8%E5%88%86-%E5%90%84%E4%B8%AA%E5%AE%B9%E5%99%A8%E5%8F%88%E6%9C%89%E5%93%AA%E4%BA%9B%E4%B8%8D%E5%90%8C%E9%83%A8%E5%88%86/" />
@@ -46,7 +46,7 @@
     <link href="http://localhost:4000/posts/ubuntu22-04%E9%85%8D%E7%BD%AEc-%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/" rel="alternate" type="text/html" title="虚拟机安装ubuntu22.04+配置c++开发环境" />
     <published>2025-08-20T23:41:00+08:00</published>
   
-    <updated>2025-09-02T22:18:21+08:00</updated>
+    <updated>2025-10-21T21:46:02+08:00</updated>
   
     <id>http://localhost:4000/posts/ubuntu22-04%E9%85%8D%E7%BD%AEc-%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</id>
     <content type="text/html" src="http://localhost:4000/posts/ubuntu22-04%E9%85%8D%E7%BD%AEc-%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/" />
@@ -68,7 +68,7 @@
     <link href="http://localhost:4000/posts/github-pages-jekyll-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" rel="alternate" type="text/html" title="Github pages + jekyll 搭建个人博客" />
     <published>2025-08-16T23:38:00+08:00</published>
   
-    <updated>2025-10-21T21:07:59+08:00</updated>
+    <updated>2025-10-21T21:46:02+08:00</updated>
   
     <id>http://localhost:4000/posts/github-pages-jekyll-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</id>
     <content type="text/html" src="http://localhost:4000/posts/github-pages-jekyll-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" />
